@@ -1,50 +1,75 @@
-fuse-overlayfs
-===========
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# fuse-overlayfs
 
-An implementation of overlay+shiftfs in FUSE for rootless containers.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/fuse-overlayfs)
 
-Usage:
-=======================================================
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-```
-$ fuse-overlayfs -o lowerdir=lowerdir/a:lowerdir/b,upperdir=up,workdir=workdir merged
-```
+## Architecture
 
-Specify a different UID/GID mapping:
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-```
-$ fuse-overlayfs -o uidmapping=0:10:100:100:10000:2000,gidmapping=0:10:100:100:10000:2000,lowerdir=lowerdir/a:lowerdir/b,upperdir=up,workdir=workdir merged
-```
+## Install
 
-Requirements:
-=======================================================
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-Your system needs `libfuse` >= v3.2.1.
-
-* On Fedora: `dnf install fuse3-devel`
-* On Ubuntu >= 19.04: `apt install libfuse3-dev`
-
-Also, please note that, when using `fuse-overlayfs` **from a user namespace**
-(for example, when using rootless `podman`) a Linux Kernel >= v4.18.0 is required.
-
-
-Building:
-=======================================================
-
-fuse-overlayfs is written in Rust. To build:
-
-```
-cargo build --release
+```bash
+git clone https://github.com/Interested-Deving-1896/fuse-overlayfs.git
+cd fuse-overlayfs
 ```
 
-The resulting binary is at `target/release/fuse-overlayfs`.
+## Usage
 
-To install:
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/fuse-overlayfs`](https://github.com/Interested-Deving-1896/fuse-overlayfs) and mirrored through:
 
 ```
-make install
+Interested-Deving-1896/fuse-overlayfs  ──►  OpenOS-Project-OSP/fuse-overlayfs  ──►  OpenOS-Project-Ecosystem-OOC/fuse-overlayfs
 ```
 
-Pre-built static binaries for multiple architectures (x86_64, aarch64,
-armv7l, s390x, ppc64le, riscv64) are available from the
-[GitHub Releases](https://github.com/containers/fuse-overlayfs/releases) page.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-2.0](https://github.com/Interested-Deving-1896/fuse-overlayfs/blob/main/COPYING) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
